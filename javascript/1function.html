@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions concepts</title>
+</head>
+<body>
+    <!-- function declaration -->
+    <script>
+        function shravya(x,y){
+            console.log(x+y);
+        }
+        // shravya()
+
+        shravya(5,10)
+    </script>
+
+<!-- function expression -->
+
+    <script>
+
+    let shravya1=function(a,b){
+        console.log('hello this is function expression');
+        return(a*b);
+    
+    }
+    shravya1(5,2)
+    </script>
+
+    <!-- arrow function -->
+<script>
+let shravya2 = z => 'arrow function'
+</script>
+
+<!-- curry function -->
+<script>
+function shravya3(hii){
+    console.log(hii);
+
+    return function shravya4(hello){
+        console.log(hii + " " + hello);
+
+        return function shravya5(how){
+        console.log(hii + " " + hello + " " + how);
+
+        }
+    }
+};
+shravya3('full')('stack')('development')
+</script>
+
+<!-- default parameter -->
+<script>
+function shravya6(c,d=10){
+    console.log(c+d);
+}
+
+</script>
+
+
+
+</body>
+</html>

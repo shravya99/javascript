@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+<body>
+    <!-- this is also called get method -->
+    <script>
+        let date = new Date();
+        console.log(date);
+        console.log(date.getFullYear());
+        console.log(date.getMonth());
+        console.log(date.getDate());
+        console.log(date.getHours());
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+        console.log(date.getMilliseconds());
+        console.log(date.getTime());
+        console.log(date.getDay());
+
+        // let another=Date();
+        // console.log(another);
+    </script>
+
+    <script>
+        let name = new Date(16729315437387);
+        console.log(name);
+
+        let milliseconds=Date.parse("2020 09 10 12:30");
+        console.log(milliseconds);
+        let date2=new Date(milliseconds);
+        console.log(date2);
+
+let months=["jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+
+
+
+    </script>
+<!-- setting method -->
+<script>
+    let settingDate=new Date();
+    console.log(settingDate);
+    console.log(settingDate.setMonth(10));  //it will show milliseconds of the below date.
+    console.log(settingDate);
+</script>
+
+<script>
+  let birthday=new Date(1996,05,25);
+  console.log(birthday);
+  let userBirthdayDate=birthday.getDate();
+  console.log(userBirthdayDate);
+  let userBirthdayMonth=birthday.getMonth();
+  console.log(userBirthdayMonth);
+
+  let now=new Date();
+  console.log(now);
+  let presentMonth=now.getMonth();
+  console.log(presentMonth);
+  let presentDate=now.getDate();
+  console.log(presentDate);
+
+if(userBirthdayDate===presentDate && userbirthdayMonth===presentMonth){
+    alert("happy birthday to you");
+}
+else{
+    alert("its not your birthday");
+}
+</script>
+
+</body>
+</html>
